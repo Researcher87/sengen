@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import ApplicationDataContextProvider, {ApplicationContextStore} from "./context/ApplicationContext";
+import ApplicationDataContextProvider, {ApplicationContextStore} from "../context/ApplicationContext";
 import {WebContainer} from "./WebContainer";
 
 function App() {

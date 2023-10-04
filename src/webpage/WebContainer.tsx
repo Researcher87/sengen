@@ -1,4 +1,4 @@
-import {ApplicationContextStore} from "./context/ApplicationContext";
+import {ApplicationContextStore} from "../context/ApplicationContext";
 import {useContext} from "react";
 
 export function WebContainer() {
@@ -9,6 +9,7 @@ export function WebContainer() {
     }
 
     console.log('DICTIONARY', applicationContext.dictionary);
+    console.log('CATEGORIES', applicationContext.categories);
 
     return <div>My Container</div>
 }
