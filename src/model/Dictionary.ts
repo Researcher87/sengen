@@ -21,6 +21,10 @@ export interface Noun {
         fr?: NounOfLanguage,
         zh?: NounOfLanguage,
         da?: NounOfLanguage
+    },
+    context: {
+        adjectives: Array<String>,
+        limits?: Array<String>
     }
 }
 

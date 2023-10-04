@@ -23,7 +23,7 @@
       },
       "context": {
         "adjectives": ["adj.person"],
-        "limits": "NO_PLURAL"
+        "limits": ["NO_PLURAL"]
       },
       "_comment": "Plural should not be allowed, as it would produce weird sentences like <Her mothers laugh.>"
     },
@@ -50,7 +50,7 @@
       },
       "context": {
         "adjectives": ["adj.person"],
-        "limits": "NO_PLURAL"
+        "limits": ["NO_PLURAL"]
       },
       "_comment": "@see <father>"
     },
