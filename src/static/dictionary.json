@@ -1,0 +1,170 @@
+{
+  "nouns": [
+    {
+      "id": "father",
+      "categories": ["noun.person.family"],
+      "level": 1,
+      "weight": 1,
+      "plural_rate": 0,
+      "translations": {
+        "en": {
+          "lexeme": "father",
+          "genus": "m"
+        },
+        "de": {
+          "lexeme": "Vater",
+          "plural": "Väter",
+          "genus": "m"
+        },
+        "es": {
+          "lexeme": "padre",
+          "genus": "m"
+        }
+      },
+      "context": {
+        "adjectives": ["adj.person"],
+        "limits": "NO_PLURAL"
+      },
+      "_comment": "Plural should not be allowed, as it would produce weird sentences like <Her mothers laugh.>"
+    },
+    {
+      "id": "mother",
+      "categories": ["noun.person.family"],
+      "level": 1,
+      "weight": 1,
+      "plural_rate": 0,
+      "translations": {
+        "en": {
+          "lexeme": "mother",
+          "genus": "f"
+        },
+        "de": {
+          "lexeme": "Mutter",
+          "plural": "Mütter",
+          "genus": "f"
+        },
+        "es": {
+          "lexeme": "madre",
+          "genus": "f"
+        }
+      },
+      "context": {
+        "adjectives": ["adj.person"],
+        "limits": "NO_PLURAL"
+      },
+      "_comment": "@see <father>"
+    },
+    {
+      "id": "son",
+      "categories": ["noun.person.family"],
+      "level": 1,
+      "weight": 1,
+      "plural_rate": 0.2,
+      "translations": {
+        "en": {
+          "lexeme": "son",
+          "genus": "m"
+        },
+        "de": {
+          "lexeme": "Sohn",
+          "plural": "Söhne",
+          "genus": "m"
+        },
+        "es": {
+          "lexeme": "hijo",
+          "genus": "m"
+        }
+      },
+      "context": {
+        "adjectives": ["adj.person"]
+      }
+    },
+    {
+      "id": "daughter",
+      "categories": ["noun.person.family"],
+      "level": 1,
+      "weight": 1,
+      "plural_rate": 0.2,
+      "translations": {
+        "en": {
+          "lexeme": "daughter",
+          "genus": "f"
+        },
+        "de": {
+          "lexeme": "Tochter",
+          "plural": "Töchter",
+          "genus": "f"
+        },
+        "es": {
+          "lexeme": "hija",
+          "genus": "f"
+        }
+      },
+      "context": {
+        "adjectives": ["adj.person"]
+      }
+    },
+    {
+      "id": "boy",
+      "categories": ["noun.person.general"],
+      "level": 1,
+      "weight": 1,
+      "plural_rate": 0.5,
+      "translations": {
+        "en": {
+          "lexeme": "boy",
+          "genus": "m"
+        },
+        "de": {
+          "lexeme": "Junge",
+          "plural": "Jungen",
+          "genus": "m"
+        },
+        "es": {
+          "lexeme": "niño",
+          "genus": "m",
+          "synonyms": [
+            {
+              "lexeme": "chico",
+              "genus": "m"
+            }
+          ]
+        }
+      },
+      "context": {
+        "adjectives": ["adj.person"]
+      }
+    },
+    {
+      "id": "girl",
+      "categories": ["noun.person.general"],
+      "level": 1,
+      "weight": 1,
+      "plural_rate": 0.5,
+      "translations": {
+        "en": {
+          "lexeme": "girl",
+          "genus": "f"
+        },
+        "de": {
+          "lexeme": "Mädchen",
+          "plural": "Mädchen",
+          "genus": "f"
+        },
+        "es": {
+          "lexeme": "niña",
+          "genus": "f",
+          "synonyms": [
+            {
+              "lexeme": "chica",
+              "genus": "f"
+            }
+          ]
+        }
+      },
+      "context": {
+        "adjectives": ["adj.person"]
+      }
+    }
+  ]
+}
