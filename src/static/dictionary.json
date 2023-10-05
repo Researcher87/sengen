@@ -166,5 +166,200 @@
         "adjectives": ["adj.person"]
       }
     }
+  ],
+  "adjectives": [
+    {
+      "id": "red",
+      "category": "adj.color",
+      "level": 1,
+      "weight": 1,
+      "translations": {
+        "en": {
+          "lexeme": "red"
+        },
+        "de": {
+          "lexeme": "rot"
+        },
+        "es": {
+          "lexeme": "rojo"
+        }
+      }
+    },
+    {
+      "id": "blue",
+      "category": "adj.color",
+      "level": 1,
+      "weight": 1,
+      "translations": {
+        "en": {
+          "lexeme": "blue"
+        },
+        "de": {
+          "lexeme": "blau"
+        },
+        "es": {
+          "lexeme": "azul"
+        }
+      }
+    },
+    {
+      "id": "grün",
+      "category": "adj.color",
+      "level": 1,
+      "weight": 1,
+      "translations": {
+        "en": {
+          "lexeme": "green"
+        },
+        "de": {
+          "lexeme": "grün"
+        },
+        "es": {
+          "lexeme": "verde"
+        }
+      }
+    },
+    {
+      "id": "gelb",
+      "category": "adj.color",
+      "level": 1,
+      "weight": 1,
+      "translations": {
+        "en": {
+          "lexeme": "yellow"
+        },
+        "de": {
+          "lexeme": "gelb"
+        },
+        "es": {
+          "lexeme": "amarillo"
+        }
+      }
+    },
+    {
+      "id": "brown",
+      "category": "adj.color",
+      "level": 1,
+      "weight": 0.75,
+      "translations": {
+        "en": {
+          "lexeme": "brown"
+        },
+        "de": {
+          "lexeme": "braun"
+        },
+        "es": {
+          "lexeme": "marrón"
+        }
+      }
+    },
+    {
+      "id": "orange",
+      "category": "adj.color",
+      "level": 1,
+      "weight": 0.5,
+      "translations": {
+        "en": {
+          "lexeme": "orange"
+        },
+        "de": {
+          "lexeme": "orange"
+        },
+        "es": {
+          "lexeme": "naranja"
+        }
+      }
+    },
+    {
+      "id": "pink",
+      "category": "adj.color",
+      "level": 1,
+      "weight": 0.5,
+      "translations": {
+        "en": {
+          "lexeme": "pink"
+        },
+        "de": {
+          "lexeme": "rosa"
+        },
+        "es": {
+          "lexeme": "rosa"
+        }
+      }
+    },
+    {
+      "id": "grey",
+      "category": "adj.color",
+      "level": 1,
+      "weight": 0.5,
+      "translations": {
+        "en": {
+          "lexeme": "grey",
+          "synonyms": {
+            "lexeme": "gray"
+          }
+        },
+        "de": {
+          "lexeme": "grau"
+        },
+        "es": {
+          "lexeme": "gris"
+        }
+      }
+    },
+    {
+      "id": "white",
+      "category": "adj.color",
+      "level": 1,
+      "weight": 1,
+      "translations": {
+        "en": {
+          "lexeme": "white"
+        },
+        "de": {
+          "lexeme": "weiß"
+        },
+        "es": {
+          "lexeme": "blanco"
+        }
+      }
+    },
+    {
+      "id": "black",
+      "category": "adj.color",
+      "level": 1,
+      "weight": 1,
+      "translations": {
+        "en": {
+          "lexeme": "black"
+        },
+        "de": {
+          "lexeme": "schwarz"
+        },
+        "es": {
+          "lexeme": "negro"
+        }
+      }
+    },
+    {
+      "id": "purple",
+      "category": "adj.color",
+      "level": 1,
+      "weight": 1,
+      "translations": {
+        "en": {
+          "lexeme": "purple"
+        },
+        "de": {
+          "lexeme": "lila",
+          "synonyms": {
+            "lexeme": "violet"
+          }
+        },
+        "es": {
+          "lexeme": "morado"
+        }
+      }
+    }
   ]
 }

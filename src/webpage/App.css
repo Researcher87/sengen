@@ -1,3 +1,28 @@
-.App {
+.app {
   text-align: center;
+}
+
+.app-button {
+  margin-right: 1vw !important;
+}
+
+.sentence-configuration {
+  border: #ddd solid 1px;
+  border-radius: 5px;
+  padding: 1vw;
+  margin: 0.5vw;
+}
+
+.study-area {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.study-area-solution {
+  font-style: italic;
+  height: 5ch;
+}
+
+.study-area-source2 {
+  font-style: italic;
 }

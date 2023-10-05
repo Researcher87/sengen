@@ -1,6 +1,7 @@
 import {ApplicationContextStore} from "../context/ApplicationContext";
 import {useContext} from "react";
-import {verifyDictionary} from "../model/DictionaryVerification";
+import {verifyDictionary} from "../model/entities/DictionaryVerification";
+import {StudyContainer} from "./StudyContainer";
 
 export function WebContainer() {
     const applicationContext = useContext(ApplicationContextStore)
@@ -18,5 +19,7 @@ export function WebContainer() {
     const result = verifyDictionary(dictionary, categories)
     console.log('VERIFICATION RESULT', result)
 
-    return <div>My Container</div>
+    return <div>
+        <StudyContainer/>
+    </div>
 }
