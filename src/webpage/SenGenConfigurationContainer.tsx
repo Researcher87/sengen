@@ -65,9 +65,46 @@ export function SenGenConfigurationContainer() {
         })
     }
 
+    const changeSubjectClassPersonalPronoun = () => {
+        const prevState = configuration.subject.subjectClasses.personalPronoun
+        applicationContext.setConfiguration({
+            ...configuration, subject: {
+                ...configuration.subject, subjectClasses: {
+                    ...configuration.subject.subjectClasses,
+                    personalPronoun: !prevState
+                }
+            }
+        })
+    }
+
+    const changeSubjectClassPossessivePronounAndNoun = () => {
+        const prevState = configuration.subject.subjectClasses.possessivePronounAndNoun
+        applicationContext.setConfiguration({
+            ...configuration, subject: {
+                ...configuration.subject, subjectClasses: {
+                    ...configuration.subject.subjectClasses,
+                    possessivePronounAndNoun: !prevState
+                }
+            }
+        })
+    }
+
+    const changeSubjectClassDefArticleAndNoun = () => {
+        const prevState = configuration.subject.subjectClasses.defArticleAndNoun
+        applicationContext.setConfiguration({
+            ...configuration, subject: {
+                ...configuration.subject, subjectClasses: {
+                    ...configuration.subject.subjectClasses,
+                    defArticleAndNoun: !prevState
+                }
+            }
+        })
+    }
+
     return <div className={"sentence-configuration"}>
         <h2>Settings</h2>
         <h3>Subject</h3>
+        <h4>Types</h4>
         <div className="form" style={{marginLeft: "100px"}}>
             <div>
                 <Form.Check inline
@@ -84,7 +121,31 @@ export function SenGenConfigurationContainer() {
                 </Form.Check>
             </div>
         </div>
-        <h4>Subject Options</h4>
+        <h4>Classes</h4>
+        <div className="form" style={{marginLeft: "100px"}}>
+            <div>
+                <Form.Check inline
+                            checked={configuration.subject.subjectClasses.personalPronoun}
+                            label={"Personal pronoun"}
+                            onChange={changeSubjectClassPersonalPronoun}>
+                </Form.Check>
+            </div>
+            <div>
+                <Form.Check inline
+                            checked={configuration.subject.subjectClasses.defArticleAndNoun}
+                            label={"Noun phrase with def. article"}
+                            onChange={changeSubjectClassDefArticleAndNoun}>
+                </Form.Check>
+            </div>
+            <div>
+                <Form.Check inline
+                            checked={configuration.subject.subjectClasses.possessivePronounAndNoun}
+                            label={"Noun phrase with possessive pronoun"}
+                            onChange={changeSubjectClassPossessivePronounAndNoun}>
+                </Form.Check>
+            </div>
+        </div>
+        <h4>Options</h4>
         <div className="form" style={{marginLeft: "100px"}}>
             <div>
                 <Form.Check inline

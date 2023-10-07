@@ -1,12 +1,24 @@
 import {Form, FormControl} from "react-bootstrap";
-import {ChangeEvent, useState} from "react";
+import {ChangeEvent, useContext, useState} from "react";
 import {SenGenConfigurationContainer} from "./SenGenConfigurationContainer";
+import {SenGenModel} from "../model/entities/SenGenModel";
+import {ApplicationContextStore} from "../context/ApplicationContext";
+import {generateSentence} from "../model/generation/SentenceGenerator";
 
 export function StudyContainer() {
+    const applicationContext = useContext(ApplicationContextStore)
+
+    if(!applicationContext) {
+        return <div>No application context.</div>
+    }
+
     const [inputTargetLanguage, setInputTargetLanguage] = useState<string>("");
-    const [sourceSentence, setSourceSentece] = useState<string>("He laughts");
-    const [sourceSentence2, setSourceSentece2] = useState<string>("Er lacht");
+    const [sourceSentence, setSourceSentence] = useState<string>("He laughts");
+    const [sourceSentence2, setSourceSentence2] = useState<string>("Er lacht");
     const [targetLanguageSolution, setTargetLanguageSolution] = useState<string>("");
+
+    const {dictionary, categories, configuration} = applicationContext
+    const senGenModel = new SenGenModel(dictionary, categories, configuration)
 
     const onShowSolution = () => {
         setTargetLanguageSolution("Él ridere")
@@ -15,6 +27,9 @@ export function StudyContainer() {
     const onNewSentence = () => {
         setTargetLanguageSolution("")
         setInputTargetLanguage("")
+
+        const generatedSentece = generateSentence(senGenModel)
+        console.log('SENTENCE:', generatedSentece)
     }
 
     const renderSourceSentence = () => {

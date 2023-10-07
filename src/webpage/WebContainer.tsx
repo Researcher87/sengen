@@ -1,6 +1,6 @@
 import {ApplicationContextStore} from "../context/ApplicationContext";
 import {useContext} from "react";
-import {verifyDictionary} from "../model/entities/DictionaryVerification";
+import {verifyDictionary} from "../model/util/DictionaryVerification";
 import {StudyContainer} from "./StudyContainer";
 
 export function WebContainer() {

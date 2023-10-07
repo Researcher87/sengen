@@ -2,7 +2,9 @@
   "nouns": [
     {
       "id": "father",
-      "categories": ["noun.person.family"],
+      "categories": [
+        "noun.person.family"
+      ],
       "level": 1,
       "weight": 1,
       "plural_rate": 0,
@@ -22,14 +24,20 @@
         }
       },
       "context": {
-        "adjectives": ["adj.person"],
-        "limits": ["NO_PLURAL"]
+        "adjectives": [
+          "adj.person"
+        ],
+        "limits": [
+          "NO_PLURAL"
+        ]
       },
       "_comment": "Plural should not be allowed, as it would produce weird sentences like <Her mothers laugh.>"
     },
     {
       "id": "mother",
-      "categories": ["noun.person.family"],
+      "categories": [
+        "noun.person.family"
+      ],
       "level": 1,
       "weight": 1,
       "plural_rate": 0,
@@ -49,14 +57,20 @@
         }
       },
       "context": {
-        "adjectives": ["adj.person"],
-        "limits": ["NO_PLURAL"]
+        "adjectives": [
+          "adj.person"
+        ],
+        "limits": [
+          "NO_PLURAL"
+        ]
       },
       "_comment": "@see <father>"
     },
     {
       "id": "son",
-      "categories": ["noun.person.family"],
+      "categories": [
+        "noun.person.family"
+      ],
       "level": 1,
       "weight": 1,
       "plural_rate": 0.2,
@@ -76,12 +90,16 @@
         }
       },
       "context": {
-        "adjectives": ["adj.person"]
+        "adjectives": [
+          "adj.person"
+        ]
       }
     },
     {
       "id": "daughter",
-      "categories": ["noun.person.family"],
+      "categories": [
+        "noun.person.family"
+      ],
       "level": 1,
       "weight": 1,
       "plural_rate": 0.2,
@@ -101,12 +119,16 @@
         }
       },
       "context": {
-        "adjectives": ["adj.person"]
+        "adjectives": [
+          "adj.person"
+        ]
       }
     },
     {
       "id": "boy",
-      "categories": ["noun.person.general"],
+      "categories": [
+        "noun.person.general"
+      ],
       "level": 1,
       "weight": 1,
       "plural_rate": 0.5,
@@ -132,12 +154,16 @@
         }
       },
       "context": {
-        "adjectives": ["adj.person"]
+        "adjectives": [
+          "adj.person"
+        ]
       }
     },
     {
       "id": "girl",
-      "categories": ["noun.person.general"],
+      "categories": [
+        "noun.person.general"
+      ],
       "level": 1,
       "weight": 1,
       "plural_rate": 0.5,
@@ -163,14 +189,111 @@
         }
       },
       "context": {
-        "adjectives": ["adj.person"]
+        "adjectives": [
+          "adj.person"
+        ]
+      }
+    },
+    {
+      "id": "house",
+      "categories": [
+        "noun.object.building"
+      ],
+      "level": 1,
+      "weight": 1,
+      "plural_rate": 0.5,
+      "translations": {
+        "en": {
+          "lexeme": "house"
+        },
+        "de": {
+          "lexeme": "Haus",
+          "plural": "Häuser",
+          "genus": "n"
+        },
+        "es": {
+          "lexeme": "casa",
+          "genus": "f"
+        }
+      },
+      "context": {
+        "adjectives": [
+          "adj.color",
+          "adj.object.size"
+        ]
+      }
+    },
+    {
+      "id": "car",
+      "categories": [
+        "noun.object.vehicle"
+      ],
+      "level": 1,
+      "weight": 1,
+      "plural_rate": 0.5,
+      "translations": {
+        "en": {
+          "lexeme": "car"
+        },
+        "de": {
+          "lexeme": "Auto",
+          "plural": "Autos",
+          "genus": "n"
+        },
+        "es": {
+          "lexeme": "carro",
+          "genus": "m",
+          "synonyms": [
+            {
+              "lexeme": "coche",
+              "genus": "m"
+            }
+          ]
+        }
+      },
+      "context": {
+        "adjectives": [
+          "adj.color",
+          "adj.object.size"
+        ]
+      }
+    },
+    {
+      "id": "school",
+      "categories": [
+        "noun.object.building"
+      ],
+      "level": 1,
+      "weight": 1,
+      "plural_rate": 0.1,
+      "translations": {
+        "en": {
+          "lexeme": "school"
+        },
+        "de": {
+          "lexeme": "Schule",
+          "plural": "Schulen",
+          "genus": "n"
+        },
+        "es": {
+          "lexeme": "escuela",
+          "genus": "f"
+        }
+      },
+      "context": {
+        "adjectives": [
+          "adj.color",
+          "adj.object.size"
+        ]
       }
     }
   ],
   "adjectives": [
     {
       "id": "red",
-      "category": "adj.color",
+      "categories": [
+        "adj.color"
+      ],
       "level": 1,
       "weight": 1,
       "translations": {
@@ -187,7 +310,9 @@
     },
     {
       "id": "blue",
-      "category": "adj.color",
+      "categories": [
+        "adj.color"
+      ],
       "level": 1,
       "weight": 1,
       "translations": {
@@ -204,7 +329,9 @@
     },
     {
       "id": "grün",
-      "category": "adj.color",
+      "categories": [
+        "adj.color"
+      ],
       "level": 1,
       "weight": 1,
       "translations": {
@@ -221,7 +348,9 @@
     },
     {
       "id": "gelb",
-      "category": "adj.color",
+      "categories": [
+        "adj.color"
+      ],
       "level": 1,
       "weight": 1,
       "translations": {
@@ -238,7 +367,9 @@
     },
     {
       "id": "brown",
-      "category": "adj.color",
+      "categories": [
+        "adj.color"
+      ],
       "level": 1,
       "weight": 0.75,
       "translations": {
@@ -255,7 +386,9 @@
     },
     {
       "id": "orange",
-      "category": "adj.color",
+      "categories": [
+        "adj.color"
+      ],
       "level": 1,
       "weight": 0.5,
       "translations": {
@@ -272,7 +405,9 @@
     },
     {
       "id": "pink",
-      "category": "adj.color",
+      "categories": [
+        "adj.color"
+      ],
       "level": 1,
       "weight": 0.5,
       "translations": {
@@ -289,15 +424,19 @@
     },
     {
       "id": "grey",
-      "category": "adj.color",
+      "categories": [
+        "adj.color"
+      ],
       "level": 1,
       "weight": 0.5,
       "translations": {
         "en": {
           "lexeme": "grey",
-          "synonyms": {
-            "lexeme": "gray"
-          }
+          "synonyms": [
+            {
+              "lexeme": "gray"
+            }
+          ]
         },
         "de": {
           "lexeme": "grau"
@@ -309,7 +448,9 @@
     },
     {
       "id": "white",
-      "category": "adj.color",
+      "categories": [
+        "adj.color"
+      ],
       "level": 1,
       "weight": 1,
       "translations": {
@@ -326,7 +467,9 @@
     },
     {
       "id": "black",
-      "category": "adj.color",
+      "categories": [
+        "adj.color"
+      ],
       "level": 1,
       "weight": 1,
       "translations": {
@@ -343,7 +486,9 @@
     },
     {
       "id": "purple",
-      "category": "adj.color",
+      "categories": [
+        "adj.color"
+      ],
       "level": 1,
       "weight": 1,
       "translations": {
@@ -352,12 +497,52 @@
         },
         "de": {
           "lexeme": "lila",
-          "synonyms": {
-            "lexeme": "violet"
-          }
+          "synonyms": [
+            {
+              "lexeme": "violet"
+            }
+          ]
         },
         "es": {
           "lexeme": "morado"
+        }
+      }
+    },
+    {
+      "id": "big",
+      "categories": [
+        "adj.size.obj"
+      ],
+      "level": 1,
+      "weight": 1,
+      "translations": {
+        "en": {
+          "lexeme": "big"
+        },
+        "de": {
+          "lexeme": "groß"
+        },
+        "es": {
+          "lexeme": "gran"
+        }
+      }
+    },
+    {
+      "id": "small",
+      "categories": [
+        "adj.size.obj"
+      ],
+      "level": 1,
+      "weight": 1,
+      "translations": {
+        "en": {
+          "lexeme": "small"
+        },
+        "de": {
+          "lexeme": "klein"
+        },
+        "es": {
+          "lexeme": "pequeño"
         }
       }
     }

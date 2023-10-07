@@ -1,12 +1,12 @@
 import {Component, createContext, ReactElement} from "react";
-import {Dictionary} from "../model/entities/Dictionary";
+import {Dictionary} from "../model/entities/dictionary/Dictionary";
 import dictionary from "../static/dictionary.json";
 import categories from "../static/categories.json";
 import {initialSenGenConfiguration, SenGenConfiguration} from "../model/entities/SenGenConfiguration";
 
 export interface ApplicationDataContext {
     dictionary: Dictionary,
-    categories: Array<String>,
+    categories: Array<string>,
     configuration: SenGenConfiguration,
     setConfiguration: (configuration: SenGenConfiguration) => void
 }

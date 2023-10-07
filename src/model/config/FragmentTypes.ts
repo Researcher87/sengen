@@ -1,0 +1,1 @@
+export const SUBJECT_PERSONAL_PRONOUN = 0

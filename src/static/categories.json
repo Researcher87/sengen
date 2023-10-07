@@ -1,5 +1,9 @@
 [
-  "adjective.person",
+  "adj.color",
+  "adj.object.size",
+  "adj.person",
+  "noun.object.building",
+  "noun.object.vehicle",
   "noun.person",
   "noun.person.family",
   "noun.person.general"
