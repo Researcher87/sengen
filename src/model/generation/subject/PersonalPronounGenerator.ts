@@ -72,17 +72,17 @@ function getPersonalPronoun(person: number, grammaticalNumber: number, gender: n
         case LANG_EN:
             return {
                 category: PRONOUN_PERSONAL,
-                word: {word: getEnglishPersonalPronoun(person, grammaticalNumber, gender)}
+                resolvedWord: getEnglishPersonalPronoun(person, grammaticalNumber, gender)
             }
         case LANG_DE:
             return {
                 category: PRONOUN_PERSONAL,
-                word: {word: getGermanPersonalPronoun(person, grammaticalNumber, gender)}
+                resolvedWord: getGermanPersonalPronoun(person, grammaticalNumber, gender)
             }
         case LANG_ES:
             return {
                 category: PRONOUN_PERSONAL,
-                word: {word: getSpanishPersonalPronoun(person, grammaticalNumber, gender)}
+                resolvedWord: getSpanishPersonalPronoun(person, grammaticalNumber, gender)
             }
     }
 

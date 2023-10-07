@@ -12,11 +12,8 @@ export function WebContainer() {
 
     const dictionary = applicationContext.dictionary;
     const categories = applicationContext.categories;
-
-    console.log('DICTIONARY', dictionary);
-    console.log('CATEGORIES', categories);
-
     const result = verifyDictionary(dictionary, categories)
+
     console.log('VERIFICATION RESULT', result)
 
     return <div>

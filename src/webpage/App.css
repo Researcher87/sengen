@@ -1,9 +1,15 @@
-.app {
-  text-align: center;
+.configuration-heading1 {
+  font-size: 1.6rem;
+  font-weight: bold;
 }
 
-.app-button {
-  margin-right: 1vw !important;
+.configuration-heading2 {
+  font-size: 1.4rem;
+  font-weight: bolder;
+}
+
+.configuration-heading3 {
+  font-size: 1.2rem;
 }
 
 .sentence-configuration {
@@ -11,6 +17,9 @@
   border-radius: 5px;
   padding: 1vw;
   margin: 0.5vw;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .study-area {
@@ -18,11 +27,28 @@
   margin: auto;
 }
 
+.study-area-button {
+  margin-right: 1vw !important;
+  width: 22ch;
+}
+
+
 .study-area-solution {
   font-style: italic;
   height: 5ch;
+  text-align: center;
+}
+
+.study-area-source {
+  font-size: 2rem;
+  font-style: italic;
+  padding-bottom: 1vh;
+  text-align: center;
 }
 
 .study-area-source2 {
+  font-size: 1.5rem;
   font-style: italic;
+  padding-bottom: 5vh;
+  text-align: center;
 }

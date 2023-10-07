@@ -3,9 +3,10 @@ import {SenGenConfiguration} from "../entities/SenGenConfiguration";
 import {SenGenModel} from "../entities/SenGenModel";
 import {createPersonalPronoun} from "./subject/PersonalPronounGenerator";
 import {Sentence, SentenceGenerationResult} from "../entities/GeneratedSentence";
+import {generateSubject} from "./subject/SubjectGenerator";
 
 export function generateSentence(senGenModel: SenGenModel): SentenceGenerationResult {
-    const subjectFragments = createPersonalPronoun()
+    const subjectFragments = generateSubject(senGenModel)
 
     if(subjectFragments.length === 0) {
         return {

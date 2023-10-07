@@ -101,78 +101,53 @@ export function SenGenConfigurationContainer() {
         })
     }
 
-    return <div className={"sentence-configuration"}>
-        <h2>Settings</h2>
-        <h3>Subject</h3>
-        <h4>Types</h4>
-        <div className="form" style={{marginLeft: "100px"}}>
-            <div>
-                <Form.Check inline
-                            checked={configuration.subject.subjectTypes.person}
-                            label={"Person"}
-                            onChange={changeSubjectTypePerson}>
-                </Form.Check>
-            </div>
-            <div>
-                <Form.Check inline
-                            checked={configuration.subject.subjectTypes.object}
-                            label={"Object"}
-                            onChange={changeSubjectTypeObject}>
-                </Form.Check>
-            </div>
+    return <div className={"sentence-configuration d-flex flex-column justify-content-start"}>
+        <div className={"configuration-heading1"}>Settings</div>
+        <div className={"configuration-heading2"}>Subject</div>
+        <div className={"configuration-heading3"}>Types</div>
+        <div style={{marginLeft: "1vw"}}>
+            <Form.Check checked={configuration.subject.subjectTypes.person}
+                        label={"Person"}
+                        onChange={changeSubjectTypePerson}>
+            </Form.Check>
+            <Form.Check checked={configuration.subject.subjectTypes.object}
+                        label={"Object"}
+                        onChange={changeSubjectTypeObject}>
+            </Form.Check>
         </div>
-        <h4>Classes</h4>
-        <div className="form" style={{marginLeft: "100px"}}>
-            <div>
-                <Form.Check inline
-                            checked={configuration.subject.subjectClasses.personalPronoun}
-                            label={"Personal pronoun"}
-                            onChange={changeSubjectClassPersonalPronoun}>
-                </Form.Check>
-            </div>
-            <div>
-                <Form.Check inline
-                            checked={configuration.subject.subjectClasses.defArticleAndNoun}
-                            label={"Noun phrase with def. article"}
-                            onChange={changeSubjectClassDefArticleAndNoun}>
-                </Form.Check>
-            </div>
-            <div>
-                <Form.Check inline
-                            checked={configuration.subject.subjectClasses.possessivePronounAndNoun}
-                            label={"Noun phrase with possessive pronoun"}
-                            onChange={changeSubjectClassPossessivePronounAndNoun}>
-                </Form.Check>
-            </div>
+        <div className={"configuration-heading3"}>Noun classes</div>
+        <div style={{marginLeft: "1vw"}}>
+            <Form.Check className="form" checked={configuration.subject.subjectClasses.personalPronoun}
+                        label={"Personal pronoun"}
+                        onChange={changeSubjectClassPersonalPronoun}>
+            </Form.Check>
+            <Form.Check checked={configuration.subject.subjectClasses.defArticleAndNoun}
+                        label={"Noun phrase with def. article"}
+                        onChange={changeSubjectClassDefArticleAndNoun}>
+            </Form.Check>
+            <Form.Check checked={configuration.subject.subjectClasses.possessivePronounAndNoun}
+                        label={"Noun phrase with possessive pronoun"}
+                        onChange={changeSubjectClassPossessivePronounAndNoun}>
+            </Form.Check>
         </div>
-        <h4>Options</h4>
-        <div className="form" style={{marginLeft: "100px"}}>
-            <div>
-                <Form.Check inline
-                            checked={configuration.subject.options.useAdjective}
-                            label={"Use adjective with noun"}
-                            onChange={changeSubjectOptionAdjective}>
-                </Form.Check>
-            </div>
-            <div>
-                <Form.Check inline
-                            checked={configuration.subject.options.combineTwoSubjects}
-                            label={"Combine two subjects (and-conjunction)"}
-                            onChange={changeSubjectOptionCombine}>
-                </Form.Check>
-            </div>
+        <div className={"configuration-heading3"}>Options</div>
+        <div style={{marginLeft: "1vw"}}>
+            <Form.Check checked={configuration.subject.options.useAdjective}
+                        label={"Use adjective with noun"}
+                        onChange={changeSubjectOptionAdjective}>
+            </Form.Check>
+            <Form.Check checked={configuration.subject.options.combineTwoSubjects}
+                        label={"Combine two subjects (and-conjunction)"}
+                        onChange={changeSubjectOptionCombine}>
+            </Form.Check>
         </div>
-        <h3>Sentence Types</h3>
-        <div className="form" style={{marginLeft: "100px"}}>
-            <Form.Check inline
-                        checked={configuration.sentenceTypes.subjectPhrase}
+        <div className={"configuration-heading2"}>Sentence Types</div>
+        <div style={{marginLeft: "1vw"}}>
+            <Form.Check checked={configuration.sentenceTypes.subjectPhrase}
                         label={"Subject Phrase (S)"}
                         onChange={changeSentenceTypeS}>
             </Form.Check>
-        </div>
-        <div>
-            <Form.Check inline
-                        checked={configuration.sentenceTypes.subjectVerb}
+            <Form.Check checked={configuration.sentenceTypes.subjectVerb}
                         label={"Subject and intransitive verb (SV)"}
                         onChange={changeSentenceTypeSV}>
             </Form.Check>

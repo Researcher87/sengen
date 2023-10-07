@@ -1,4 +1,4 @@
-import React, {ReactElement} from 'react';
+import React from 'react';
 import './App.css';
 import ApplicationDataContextProvider, {ApplicationContextStore} from "../context/ApplicationContext";
 import {WebContainer} from "./WebContainer";
@@ -8,7 +8,7 @@ import "bootstrap/dist/js/bootstrap.min.js";
 
 function App() {
     return (
-        <div className="app">
+        <div>
             <ApplicationDataContextProvider>
                 <WebContainer/>
             </ApplicationDataContextProvider>

@@ -22,7 +22,8 @@ export interface SentenceFragment {
 
 export interface WordOfSentence {
     category: number,
-    word: DictionaryWord | ResolvedWord
+    resolvedWord: string,
+    word?: DictionaryWord
 }
 
 export interface ResolvedWord {

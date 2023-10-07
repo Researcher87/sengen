@@ -125,6 +125,209 @@
       }
     },
     {
+      "id": "grandfather",
+      "categories": [
+        "noun.person.family"
+      ],
+      "level": 1,
+      "weight": 1,
+      "plural_rate": 0.1,
+      "translations": {
+        "en": {
+          "lexeme": "grandfather",
+          "genus": "m"
+        },
+        "de": {
+          "lexeme": "Großvater",
+          "plural": "Großväter",
+          "genus": "m"
+        },
+        "es": {
+          "lexeme": "abuelo",
+          "genus": "m"
+        }
+      },
+      "context": {
+        "adjectives": [
+          "adj.person"
+        ]
+      }
+    },
+    {
+      "id": "grandmother",
+      "categories": [
+        "noun.person.family"
+      ],
+      "level": 1,
+      "weight": 1,
+      "plural_rate": 0.1,
+      "translations": {
+        "en": {
+          "lexeme": "grandmother",
+          "genus": "f"
+        },
+        "de": {
+          "lexeme": "Großmutter",
+          "plural": "Großmutter",
+          "genus": "f"
+        },
+        "es": {
+          "lexeme": "abuela",
+          "genus": "f"
+        }
+      },
+      "context": {
+        "adjectives": [
+          "adj.person"
+        ]
+      }
+    },
+    {
+      "id": "dad",
+      "categories": [
+        "noun.person.family"
+      ],
+      "level": 1,
+      "weight": 1,
+      "plural_rate": 0,
+      "translations": {
+        "en": {
+          "lexeme": "dad",
+          "genus": "m"
+        },
+        "de": {
+          "lexeme": "Papa",
+          "plural": "Papas",
+          "genus": "m"
+        },
+        "es": {
+          "lexeme": "papa",
+          "genus": "m"
+        }
+      },
+      "context": {
+        "adjectives": [
+          "adj.person"
+        ]
+      }
+    },
+    {
+      "id": "mom",
+      "categories": [
+        "noun.person.family"
+      ],
+      "level": 1,
+      "weight": 1,
+      "plural_rate": 0,
+      "translations": {
+        "en": {
+          "lexeme": "mom",
+          "genus": "f"
+        },
+        "de": {
+          "lexeme": "Mama",
+          "plural": "Mamas",
+          "genus": "f"
+        },
+        "es": {
+          "lexeme": "mamá",
+          "genus": "f"
+        }
+      },
+      "context": {
+        "adjectives": [
+          "adj.person"
+        ]
+      }
+    },
+    {
+      "id": "uncle",
+      "categories": [
+        "noun.person.family"
+      ],
+      "level": 1,
+      "weight": 1,
+      "plural_rate": 0.2,
+      "translations": {
+        "en": {
+          "lexeme": "uncle",
+          "genus": "m"
+        },
+        "de": {
+          "lexeme": "Onkel",
+          "plural": "Onkel",
+          "genus": "m"
+        },
+        "es": {
+          "lexeme": "tíu",
+          "genus": "m"
+        }
+      },
+      "context": {
+        "adjectives": [
+          "adj.person"
+        ]
+      }
+    },
+    {
+      "id": "aunt",
+      "categories": [
+        "noun.person.family"
+      ],
+      "level": 1,
+      "weight": 1,
+      "plural_rate": 0.3,
+      "translations": {
+        "en": {
+          "lexeme": "aunt",
+          "genus": "f"
+        },
+        "de": {
+          "lexeme": "Tante",
+          "plural": "Tanten",
+          "genus": "f"
+        },
+        "es": {
+          "lexeme": "tías",
+          "genus": "f"
+        }
+      },
+      "context": {
+        "adjectives": [
+          "adj.person"
+        ]
+      }
+    },
+    {
+      "id": "parents",
+      "categories": [
+        "noun.person.general"
+      ],
+      "level": 1,
+      "weight": 1,
+      "plural_rate": 1.0,
+      "translations": {
+        "en": {
+          "lexeme": "parents",
+          "plural": "parents"
+        },
+        "de": {
+          "lexeme": "Eltern",
+          "plural": "Eltern",
+          "genus": "f"
+        },
+        "es": {
+          "lexeme": "padres",
+          "genus": "m"
+        }
+      },
+      "context": {
+        "adjectives": [
+          "adj.person"
+        ]
+      }
+    },
+    {
       "id": "boy",
       "categories": [
         "noun.person.general"
@@ -183,6 +386,312 @@
           "synonyms": [
             {
               "lexeme": "chica",
+              "genus": "f"
+            }
+          ]
+        }
+      },
+      "context": {
+        "adjectives": [
+          "adj.person"
+        ]
+      }
+    },
+    {
+      "id": "man",
+      "categories": [
+        "noun.person.general"
+      ],
+      "level": 1,
+      "weight": 1,
+      "plural_rate": 0.5,
+      "translations": {
+        "en": {
+          "lexeme": "man",
+          "genus": "m"
+        },
+        "de": {
+          "lexeme": "Mann",
+          "plural": "Männer",
+          "genus": "m"
+        },
+        "es": {
+          "lexeme": "hombre",
+          "genus": "m"
+        }
+      },
+      "context": {
+        "adjectives": [
+          "adj.person"
+        ]
+      }
+    },
+    {
+      "id": "woman",
+      "categories": [
+        "noun.person.general"
+      ],
+      "level": 1,
+      "weight": 1,
+      "plural_rate": 0.5,
+      "translations": {
+        "en": {
+          "lexeme": "woman",
+          "genus": "f"
+        },
+        "de": {
+          "lexeme": "Frau",
+          "plural": "Frau",
+          "genus": "f"
+        },
+        "es": {
+          "lexeme": "mujer",
+          "genus": "f",
+          "synonyms": [
+            {
+              "lexeme": "señora",
+              "genus": "f"
+            }
+          ]
+        }
+      },
+      "context": {
+        "adjectives": [
+          "adj.person"
+        ]
+      }
+    },
+    {
+      "id": "child",
+      "categories": [
+        "noun.person.general"
+      ],
+      "level": 1,
+      "weight": 1,
+      "plural_rate": 0.5,
+      "translations": {
+        "en": {
+          "lexeme": "child",
+          "plural": "children",
+          "synonyms": [
+            {
+              "lexeme": "kid"
+            }
+          ]
+        },
+        "de": {
+          "lexeme": "Kind",
+          "plural": "Kinder",
+          "genus": "n"
+        },
+        "es": {
+          "lexeme": "niño",
+          "genus": "m"
+        }
+      },
+      "context": {
+        "adjectives": [
+          "adj.person"
+        ]
+      }
+    },
+    {
+      "id": "people",
+      "categories": [
+        "noun.person.general"
+      ],
+      "level": 1,
+      "weight": 1,
+      "plural_rate": 1.0,
+      "translations": {
+        "en": {
+          "lexeme": "people",
+          "plural": "people"
+        },
+        "de": {
+          "lexeme": "Leute",
+          "plural": "Leute",
+          "genus": "f"
+        },
+        "es": {
+          "lexeme": "gente",
+          "plural": "gente",
+          "genus": "m"
+        }
+      },
+      "context": {
+        "adjectives": [
+          "adj.person"
+        ]
+      }
+    },
+    {
+      "id": "friend (m)",
+      "categories": [
+        "noun.person.general"
+      ],
+      "level": 1,
+      "weight": 1,
+      "plural_rate": 0.5,
+      "translations": {
+        "en": {
+          "lexeme": "friend"
+        },
+        "de": {
+          "lexeme": "Freund",
+          "plural": "Freunde",
+          "genus": "m"
+        },
+        "es": {
+          "lexeme": "amigo",
+          "genus": "m"
+        }
+      },
+      "context": {
+        "adjectives": [
+          "adj.person"
+        ]
+      }
+    },
+    {
+      "id": "friend (f)",
+      "categories": [
+        "noun.person.general"
+      ],
+      "level": 1,
+      "weight": 1,
+      "plural_rate": 0.5,
+      "translations": {
+        "en": {
+          "lexeme": "friend"
+        },
+        "de": {
+          "lexeme": "Freundin",
+          "plural": "Freundinnen",
+          "genus": "f"
+        },
+        "es": {
+          "lexeme": "amiga",
+          "genus": "f"
+        }
+      },
+      "context": {
+        "adjectives": [
+          "adj.person"
+        ]
+      }
+    },
+    {
+      "id": "boyfriend",
+      "categories": [
+        "noun.person.general"
+      ],
+      "level": 1,
+      "weight": 1,
+      "plural_rate": 0.5,
+      "translations": {
+        "en": {
+          "lexeme": "boyfriend"
+        },
+        "de": {
+          "lexeme": "Freund",
+          "plural": "Freunde",
+          "genus": "m"
+        },
+        "es": {
+          "lexeme": "novio",
+          "genus": "m"
+        }
+      },
+      "context": {
+        "adjectives": [
+          "adj.person"
+        ]
+      }
+    },
+    {
+      "id": "girlfriend",
+      "categories": [
+        "noun.person.general"
+      ],
+      "level": 1,
+      "weight": 1,
+      "plural_rate": 0.5,
+      "translations": {
+        "en": {
+          "lexeme": "girlfriend"
+        },
+        "de": {
+          "lexeme": "Freundin",
+          "plural": "Freundinnen",
+          "genus": "f"
+        },
+        "es": {
+          "lexeme": "novia",
+          "genus": "f"
+        }
+      },
+      "context": {
+        "adjectives": [
+          "adj.person"
+        ]
+      }
+    },
+    {
+      "id": "colleague (m)",
+      "categories": [
+        "noun.person.general"
+      ],
+      "level": 1,
+      "weight": 1,
+      "plural_rate": 0.5,
+      "translations": {
+        "en": {
+          "lexeme": "colleague"
+        },
+        "de": {
+          "lexeme": "Kollege",
+          "plural": "Kollegen",
+          "genus": "m"
+        },
+        "es": {
+          "lexeme": "compañero",
+          "genus": "m",
+          "synonyms": [{
+            "lexeme": "collega",
+            "genus": "m"
+          }]
+        }
+      },
+      "context": {
+        "adjectives": [
+          "adj.person"
+        ]
+      }
+    },
+    {
+      "id": "colleague (f)",
+      "categories": [
+        "noun.person.general"
+      ],
+      "level": 1,
+      "weight": 1,
+      "plural_rate": 0.5,
+      "translations": {
+        "en": {
+          "lexeme": "colleague"
+        },
+        "de": {
+          "lexeme": "Kollegin",
+          "plural": "Kolleginnen",
+          "genus": "f"
+        },
+        "es": {
+          "lexeme": "compañera",
+          "genus": "f",
+          "synonyms": [
+            {
+              "lexeme": "collega",
               "genus": "f"
             }
           ]
@@ -273,7 +782,7 @@
         "de": {
           "lexeme": "Schule",
           "plural": "Schulen",
-          "genus": "n"
+          "genus": "f"
         },
         "es": {
           "lexeme": "escuela",
@@ -415,7 +924,8 @@
           "lexeme": "pink"
         },
         "de": {
-          "lexeme": "rosa"
+          "lexeme": "rosa",
+          "nominative":  "rosane"
         },
         "es": {
           "lexeme": "rosa"
